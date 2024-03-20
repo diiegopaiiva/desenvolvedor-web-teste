@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Bebidas</title>
     <link rel="stylesheet" href="./src/style.css">
-    <link rel="icon" href="./src/img/logo-icon.png" type="image/x-icon">
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Container principal -->
-    <div class="container">
-        <!-- Título da página -->
-        <h1>Consulta de Bebidas</h1>
-        <!-- Formulário de pesquisa -->
-        <form id="searchForm">
-            <!-- Campo de entrada de texto -->
-            <input type="text" id="searchInput" placeholder="Digite o nome de uma bebida...">
-            <!-- Botão de pesquisa -->
-            <button type="submit" id="searchButton">Pesquisar</button>
-        </form>
-        <!-- Seção para exibir informações da bebida -->
-        <div id="drinkInfo" class="drink-info">
-            <div id="drinkImage" class="drink-image"></div>
-            <div id="drinkDetails" class="drink-details"></div>
+    <div class="wrapper">
+        <!-- Imagem ao lado do contêiner -->
+        <div class="imagem-lateral">
+            <img src="./src/img/drink.png" alt="logo Drink Finder">
+        </div>
+        <!-- Container principal -->
+        <div class="container">
+            <!-- Título da página -->
+            <h1>Consulta de Bebidas</h1>
+            <!-- Formulário de pesquisa -->
+            <form id="searchForm">
+                <!-- Campo de entrada de texto -->
+                <input type="text" id="searchInput" placeholder="Digite o nome de uma bebida...">
+                <!-- Botão de pesquisa -->
+                <button type="submit" id="searchButton">Pesquisar</button>
+                <!-- Seletor de bebidas -->
+            </form>
+            <select id="drinkSelect">
+                <option value="">Escolha uma bebida...</option>
+                <!-- Aqui serão adicionadas as opções de bebida dinamicamente -->
+            </select>
+            <!-- Seção para exibir informações da bebida -->
+            <div id="drinkInfo" class="drink-info">
+                <div id="drinkImage" class="drink-image"></div>
+                <div id="drinkDetails" class="drink-details"></div>
+            </div>
         </div>
     </div>
 
     <!-- Script JavaScript -->
     <script src="./src/script.js"></script>
 </body>
+
 </html>
